@@ -1,5 +1,6 @@
 import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
+import Timeline from "./components/timeline/Timeline";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Sidebar />
 
       {/* Timeline */}
+      <Timeline />
 
       {/* Widget */}
     </div>
