@@ -1,0 +1,9 @@
+.post {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--twitter-background);
+}
+
+.post_body {
+  flex: 1;
+}
