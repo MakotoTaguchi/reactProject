@@ -8,28 +8,27 @@ import {
   VerifiedUser,
 } from "@mui/icons-material";
 import "./Post.css";
-function Post() {
+function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post_avatar">
-        <Avatar />
+        <Avatar src={avatar} />
       </div>
       <div className="post_body">
         <div className="poat_header">
           <div className="post_headerText">
             <h3>
-              プログラミングチュートリアル
+              {displayName}
               <span className="post_headerSpecial">
-                <VerifiedUser className="post_badge" />
-                @shin_Engineer
+                <VerifiedUser className="post_badge" />@{username}
               </span>
             </h3>
           </div>
           <div className="post_headerDescription">
-            <p>Reactなう。</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img src="https://source.unsplash.com/random" />
+        <img src={image} />
         <div className="post_footer">
           <ChatBubbleOutline fontSize="small" />
           <Repeat fontSize="small" />
