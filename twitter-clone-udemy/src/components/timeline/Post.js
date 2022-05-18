@@ -17,11 +17,13 @@ function Post() {
       <div className="post_body">
         <div className="poat_header">
           <div className="post_headerText">
-            <h3>プログラミングチュートリアル</h3>
-            <span className="post_headerSpecial">
-              <VerifiedUser className="post_badge" />
-              @shin_Engineer
-            </span>
+            <h3>
+              プログラミングチュートリアル
+              <span className="post_headerSpecial">
+                <VerifiedUser className="post_badge" />
+                @shin_Engineer
+              </span>
+            </h3>
           </div>
           <div className="post_headerDescription">
             <p>Reactなう。</p>
